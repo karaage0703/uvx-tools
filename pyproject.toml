@@ -7,6 +7,7 @@ name = "uvx-tools"
 version = "0.1.0"
 description = "Collection of CLI tools for uvx demonstration"
 authors = [{name = "karaage", email = "karaage0703@gmail.com"}]
+license = {text = "MIT"}
 requires-python = ">=3.8"
 dependencies = []
 
