@@ -9,15 +9,15 @@ uvx で動作する Python CLI ツール集
 
 ```bash
 uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx
-uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx "Your Name"
+uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx 'Your Name'
 ```
 
 ### 2. pysay
 cowsay クローン - 動物が喋るツール
 
 ```bash
-uvx --from git+https://github.com/karaage0703/uvx-tools pysay "Hello World"
-uvx --from git+https://github.com/karaage0703/uvx-tools pysay -a dragon "Dragons are cool!"
+uvx --from git+https://github.com/karaage0703/uvx-tools pysay 'Hello World'
+uvx --from git+https://github.com/karaage0703/uvx-tools pysay -a dragon 'Dragons are cool'
 uvx --from git+https://github.com/karaage0703/uvx-tools pysay -l  # 利用可能な動物一覧
 ```
 
@@ -50,10 +50,10 @@ uvx --from git+https://github.com/karaage0703/uvx-tools <command-name> [args]
 
 ```bash
 # hello-uvx
-uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx "Test"
+uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx 'Test'
 
 # pysay
-uvx --from git+https://github.com/karaage0703/uvx-tools pysay -a tux "Hello from Tux!"
+uvx --from git+https://github.com/karaage0703/uvx-tools pysay -a tux 'Hello from Tux'
 
 # file-stats
 uvx --from git+https://github.com/karaage0703/uvx-tools file-stats .
