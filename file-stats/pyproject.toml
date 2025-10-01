@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "file-stats"
+version = "0.1.0"
+description = "A file and directory analyzer for uvx demonstration"
+authors = [{name = "Demo Author", email = "demo@example.com"}]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+file-stats = "file_stats.cli:main"
