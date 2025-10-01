@@ -31,10 +31,29 @@ uvx --from git+https://github.com/karaage0703/uvx-tools file-stats /path/to/dire
 
 ## 使い方
 
+### 方法1: uvx で一時的に実行
+
 以下のコマンドで直接実行できます:
 
 ```bash
 uvx --from git+https://github.com/karaage0703/uvx-tools <command-name> [args]
+```
+
+### 方法2: uv tool install で永続的にインストール
+
+頻繁に使う場合は、インストールすると便利です:
+
+```bash
+# インストール
+uv tool install git+https://github.com/karaage0703/uvx-tools
+
+# インストール後は --from なしで実行可能
+hello-uvx 'Test'
+pysay -a dragon 'Hello'
+file-stats .
+
+# アンインストール
+uv tool uninstall uvx-tools
 ```
 
 ## 開発
