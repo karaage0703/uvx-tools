@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uvx-tools"
+version = "0.1.0"
+description = "Collection of CLI tools for uvx demonstration"
+authors = [{name = "karaage", email = "karaage0703@gmail.com"}]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+hello-uvx = "hello_uvx.cli:main"
+pysay = "pysay.cli:main"
+file-stats = "file_stats.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hello_uvx", "pysay", "file_stats"]

@@ -8,25 +8,25 @@ uvx で動作する Python CLI ツール集
 シンプルな Hello World ツール
 
 ```bash
-uvx --from https://github.com/karaage0703/uvx-tools hello-uvx
-uvx --from https://github.com/karaage0703/uvx-tools hello-uvx "Your Name"
+uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx
+uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx "Your Name"
 ```
 
 ### 2. pysay
 cowsay クローン - 動物が喋るツール
 
 ```bash
-uvx --from https://github.com/karaage0703/uvx-tools pysay "Hello World"
-uvx --from https://github.com/karaage0703/uvx-tools pysay -a dragon "Dragons are cool!"
-uvx --from https://github.com/karaage0703/uvx-tools pysay -l  # 利用可能な動物一覧
+uvx --from git+https://github.com/karaage0703/uvx-tools pysay "Hello World"
+uvx --from git+https://github.com/karaage0703/uvx-tools pysay -a dragon "Dragons are cool!"
+uvx --from git+https://github.com/karaage0703/uvx-tools pysay -l  # 利用可能な動物一覧
 ```
 
 ### 3. file-stats
 ファイル・ディレクトリ分析ツール
 
 ```bash
-uvx --from https://github.com/karaage0703/uvx-tools file-stats .
-uvx --from https://github.com/karaage0703/uvx-tools file-stats /path/to/directory
+uvx --from git+https://github.com/karaage0703/uvx-tools file-stats .
+uvx --from git+https://github.com/karaage0703/uvx-tools file-stats /path/to/directory
 ```
 
 ## 使い方
@@ -34,7 +34,7 @@ uvx --from https://github.com/karaage0703/uvx-tools file-stats /path/to/director
 以下のコマンドで直接実行できます:
 
 ```bash
-uvx --from https://github.com/karaage0703/uvx-tools <command-name> [args]
+uvx --from git+https://github.com/karaage0703/uvx-tools <command-name> [args]
 ```
 
 ## 開発
@@ -50,11 +50,11 @@ uvx --from https://github.com/karaage0703/uvx-tools <command-name> [args]
 
 ```bash
 # hello-uvx
-uvx --from https://github.com/karaage0703/uvx-tools hello-uvx "Test"
+uvx --from git+https://github.com/karaage0703/uvx-tools hello-uvx "Test"
 
 # pysay
-uvx --from https://github.com/karaage0703/uvx-tools pysay -a tux "Hello from Tux!"
+uvx --from git+https://github.com/karaage0703/uvx-tools pysay -a tux "Hello from Tux!"
 
 # file-stats
-uvx --from https://github.com/karaage0703/uvx-tools file-stats .
+uvx --from git+https://github.com/karaage0703/uvx-tools file-stats .
 ```
